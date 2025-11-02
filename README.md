@@ -33,10 +33,9 @@ venue    | formulair
 VLDB 2022| VLDB
 VLDB Conference| VLDB,
 ICML Conference |ICML
-
-'SIGMOD Record': 'SIGMOD',
-'SIGMOD Conference': 'SIGMOD',
-'ACM Trans. Database Syst.':'ACM Trans'
+SIGMOD Record |SIGMOD,
+SIGMOD Conference|SIGMOD
+ACM Trans. Database Syst.|ACM Trans
 
 et apres en remplace les différentes variantes de venues de mêmes noms par un un seul formulaire suivant 
 le dictionnaire
