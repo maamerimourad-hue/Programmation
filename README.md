@@ -24,7 +24,7 @@ Nous utilison l'instruction **_df = pd.read_csv(file_path)_** pour charger le fi
 
 ## 3.1) Affichage de fichier  
 Le fichier chrgé est affiché sur un composant **Treeview** , le resultats sur l'image
-![Affichage de fichier](tree_globale.png)
+![Affichage de fichier](Tree_Globale.png)
 
 ## 4) Pré-traiement de données:
 Consiste a remplacer les nome de l'auteur par la premieère Lettre de Prénom et aprés suivi par le Nom de l'autheur, concernant les venue en impliménte un dictionnaire des abreviation come suit:
@@ -45,7 +45,7 @@ le dictionnaire comme illustré dans le tableau ci-dessus.
 ![le Pré-traitement](preprocessing.png)
 
 ## 5) Appliquer des  filtres
-Nous pouvons faire des recherche par nom , titre, année et venue , et pour cela nous utilisant ces d'instruction (exemple sur titre):  
+Nous pouvons faire des recherche par nom , titre, année et venue , et pour cela nous utilisant ces instructions (exemple sur titre):  
 *_filtered = df.copy()_*  
 *_filtered = filtered[filtered['title'].astype(str).str.contains(title, case=False, na=False)]_*
    
