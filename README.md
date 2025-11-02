@@ -47,8 +47,8 @@ le dictionnaire comme illustré dans le tableau ci-dessus.
 ## 5) Appliquer des  filtres
 Nous pouvons faire des recherche par nom , titre, année et venue , et pour cela nous utilisant ces instructions (exemple sur titre):  
 ```python
-*_filtered = df.copy()_*  
-*_filtered = filtered[filtered['title'].astype(str).str.contains(title, case=False, na=False)]_*
+filtered = df.copy()
+filtered = filtered[filtered['title'].astype(str).str.contains(title, case=False, na=False)]
 ```
 ![la recherche par titre](partitle.png)   
 ### 5.1 ) Exemple de recherche par l'année 2003  
@@ -61,7 +61,7 @@ Nous pouvons faire des recherche par nom , titre, année et venue , et pour cela
 ## 6) Sauvegarder les resultats filtrés
  Nous pouvons sauvegarder le resultats de filtrage dans un fichier.csv Grace à  l'instruction:    
  ```python
-  **_filtered. to_csv('filtered_results.csv', index=False)_**
+  filtered. to_csv('filtered_results.csv', index=False)
   ```
  ![Sauvegarde dans fichier CSV](Save_CVS.png "Sauvegarde dans fichier CSV")
  
