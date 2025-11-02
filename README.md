@@ -32,12 +32,12 @@ Consiste a remplacer les nome de l'auteur par la premieère Lettre de Prénom et
 la venue    | le formulair
 --------- | -------------
 'VLDB'  | VLD
-VLDB 2022| VLDB
-VLDB Conference| VLDB
-ICML Conference |ICML
-SIGMOD Record |SIGMOD
-SIGMOD Conference|SIGMOD
-ACM Trans. Database Syst.|ACM Trans
+'VLDB 2022'| VLDB
+'VLDB Conference'| VLDB
+'ICML Conference' |ICML
+'SIGMOD Record' |SIGMOD
+'SIGMOD Conference'|SIGMOD
+'ACM Trans. Database Syst.'|ACM Trans
 
 Et apres en remplace les différentes variantes de venues de mêmes noms par un un seul formulaire suivant 
 le dictionnaire comme illustré dans le tableau ci-dessus.
