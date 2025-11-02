@@ -41,5 +41,5 @@ ACM Trans. Database Syst.|ACM Trans
 
 Et apres en remplace les différentes variantes de venues de mêmes noms par un un seul formulaire suivant 
 le dictionnaire comme illustré dans le tableau ci-dessus.
-![Affichage de fichier](preprocessing.png)
+![le Pré-traitement](preprocessing.png)
 
