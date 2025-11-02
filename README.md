@@ -80,5 +80,5 @@ et Nous montrons le reultats concerne les autheurs les plus actif (exemple top 1
  counter = Counter(authors)
  top_authors = counter.most_common(10)
  plt.barh([a[0] for a in reversed(top_authors)], [a[1] for a in reversed(top_authors)])
-
+```
 ![number par année](topMost_active.png)  
