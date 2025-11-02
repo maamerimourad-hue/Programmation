@@ -46,13 +46,11 @@ le dictionnaire comme illustré dans le tableau ci-dessus.
 
 5) Appliquer des  filtres
  Nous pouvons faire des recherche par nom , titre, année et venue , et pour cela nous utilisant ces d'instruction (exemple sur titre):
-
 *_filtered = df.copy()_*
-
 *_filtered = filtered[filtered['title'].astype(str).str.contains(title, case=False, na=False)]_*
    
 ![la recherche par Année](year_2003.png)
-![la recherche par Année et Venue](year 2002,VLDP.png)
+![la recherche par Année et Venue](year20%2002,%20VLDP.png)
 
 
 ## 5) Sauvegarder les resultats filtrés
