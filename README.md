@@ -59,5 +59,5 @@ Nous pouvons faire des recherche par nom , titre, année et venue , et pour cela
 
 ## 5) Sauvegarder les resultats filtrés
  Nous pouvons sauvegarder le resultats de filtrage dans un fichier.csv Grace à  l'instruction:    
-  **_filtered. to_csv('filtered_results.csv', index=False)_**  
+  **_filtered. to_csv('filtered_results.csv', index=False)_**    
  ![Sauvegarde dans fichier CSV](Save_CVS.png "Sauvegarde dans fichier CSV")
