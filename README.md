@@ -50,14 +50,15 @@ Nous pouvons faire des recherche par nom , titre, année et venue , et pour cela
 *_filtered = filtered[filtered['title'].astype(str).str.contains(title, case=False, na=False)]_*
    
 ![la recherche par Année](year_2003.png)   
-### 5.1 ) Exemple de recherch sur l'année 2003  
+### 5.1 ) Exemple de recherche par l'année 2003  
 ![la recherche par Année](year_2003.png)  
 
-### 5.2 ) Exemple de recherch sur l'année 2002 et venue=VLDP  
+### 5.2 ) Exemple de recherch par (l'année 2002 et venue=VLDP)  aprés un prétraitement
 ![la recherche par Année et Venue](year%202002%20%2C%20VLDP.png)  
 
 
 ## 5) Sauvegarder les resultats filtrés
  Nous pouvons sauvegarder le resultats de filtrage dans un fichier.csv Grace à  l'instruction:    
-  **_filtered. to_csv('filtered_results.csv', index=False)_**    
+  **_filtered. to_csv('filtered_results.csv', index=False)_**
+  
  ![Sauvegarde dans fichier CSV](Save_CVS.png "Sauvegarde dans fichier CSV")
