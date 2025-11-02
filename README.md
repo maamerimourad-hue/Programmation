@@ -20,7 +20,7 @@ les bibliothèque utilisées sont **Tkinter**, **Pandas**, **Matplotlib**
 
 ## 3) Le chargement de fichier
 Nous utilison l'instruction **_df = pd.read_csv(file_path)_** pour charger le fichier a partir d'un chmenin 
-![le chargement de fichier CSV](load_succes.png)
+![le chargement de fichier CSV](load_succes.png "le chargement de fichier CSV")
 
 ## 3.1) Affichage de fichier
 Le fichier chrgé est affiché sur un composant Treeview , le resultats sur l'image
@@ -46,14 +46,17 @@ le dictionnaire comme illustré dans le tableau ci-dessus.
 
 5) Appliquer des  filtres
  Nous pouvons faire des recherche par nom , titre, année et venue , et pour cela nous utilisant ces d'instruction (exemple sur titre):
+
 *_filtered = df.copy()_*
+
 *_filtered = filtered[filtered['title'].astype(str).str.contains(title, case=False, na=False)]_*
    
 ![la recherche par Année](year_2003.png)
 ![la recherche par Année et Venue](year 2002,VLDP.png)
 
 
-## 5) Sauvegarder les resultats filtré
+## 5) Sauvegarder les resultats filtrés
  nous pouvons sauvegarder le resultats de filtrage dans un fichier.csv Grace à  l'instruction:
+ 
  **_filtered. to_csv('filtered_results.csv', index=False)_**
- ![Sauvegarde dans fichier CSV](Save_CVS.png)
+ ![Sauvegarde dans fichier CSV](Save_CVS.png "Sauvegarde dans fichier CSV")
