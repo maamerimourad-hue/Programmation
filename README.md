@@ -12,7 +12,7 @@ les bibliothèque utilisées sont **Tkinter**, **Pandas**, **Matplotlib**
  6. **standardize_author(name)**: Standardisation des noms par la première lettre de prénom suivi de nom.
  7. **standardize_venue(venue)**: Standarisation des venue par des abreviation commune.
  8. **visualize_Number_Year()**: Pour dessiner **line chart** montrant le nombre de publication par année.
- 9. **most_active_authors()**: Pour dessiner en Horizontal **bar chart:** montrant les 10 top auteurs actifs.
+ 9. **most_active_authors()**: Pour dessiner en Horizontal **bar chart** montrant les 10 top auteurs actifs.
 
 
 ## L'Interface de l'Application 
@@ -33,11 +33,13 @@ la venue    | le formulair
 --------- | -------------
 'VLDB'  | VLD
 VLDB 2022| VLDB
-VLDB Conference| VLDB,
+VLDB Conference| VLDB
 ICML Conference |ICML
-SIGMOD Record |SIGMOD,
+SIGMOD Record |SIGMOD
 SIGMOD Conference|SIGMOD
 ACM Trans. Database Syst.|ACM Trans
 
-et apres en remplace les différentes variantes de venues de mêmes noms par un un seul formulaire suivant 
+Et apres en remplace les différentes variantes de venues de mêmes noms par un un seul formulaire suivant 
 le dictionnaire comme illustré dans le tableau ci-dessus.
+![Affichage de fichier](preprocessing.png)
+
