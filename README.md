@@ -28,15 +28,12 @@ Le fichier chrgé est affiché sur un composant Tree , le resultats sur l'image
 Consiste a remplacer les nome de l'auteur par la premieère Lettre de Prénom et aprés suivi par le Nom de l'autheur, concernant les venue en impliménte un dictionnaire des abreviation come suit:
 
 venue    | formulair
---------- -------------
-'VLDB' :   'VLDB' 
-VLDB 2022  : 'VLDB'
+---------| -------------
+'VLDB'  | VLD
+VLDB 2022| VLDB
+VLDB Conference| VLDB,
+ICML Conference |ICML
 
-
-
-
-'VLDB Conference': 'VLDB',
-'ICML Conference': 'ICML',
 'SIGMOD Record': 'SIGMOD',
 'SIGMOD Conference': 'SIGMOD',
 'ACM Trans. Database Syst.':'ACM Trans'
