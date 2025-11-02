@@ -16,15 +16,15 @@ les bibliothèque utilisées sont **Tkinter**, **Pandas**, **Matplotlib**
 
 
 ## 2) L'Interface de l'Application 
-![L'Interface génerale de l'Application](Interface_globale.png)
+! [L'Interface génerale de l'Application](Interface_Globale.png)
 
 ## 3) Le chargement de fichier
 Nous utilison l'instruction **_df = pd.read_csv(file_path)_** pour charger le fichier a partir d'un chmenin 
-![le chargement de fichier CSV](load_succes.png)
+! [le chargement de fichier CSV](load_succes.png)
 
 ## 3.1) Affichage de fichier
 Le fichier chrgé est affiché sur un composant Treeview , le resultats sur l'image
-![Affichage de fichier](tree_globale.png)
+! [Affichage de fichier](tree_globale.png)
 
 ## 4) Pré-traiement de données:
 Consiste a remplacer les nome de l'auteur par la premieère Lettre de Prénom et aprés suivi par le Nom de l'autheur, concernant les venue en impliménte un dictionnaire des abreviation come suit:
@@ -41,18 +41,19 @@ la venue    | le formulair
 
 Et après en remplace les différentes variantes de mêmes noms par un seul formulaire suivant
 le dictionnaire comme illustré dans le tableau ci-dessus.
-![le Pré-traitement](preprocessing.png)
+
+! [le Pré-traitement](preprocessing.png)
 
 5) Appliquer des  filtres
  Nous pouvons faire des recherche par nom , titre, année et venue , et pour cela nous utilisant ces d'instruction (exemple sur titre)
 *_filtered = df.copy()_*
 *_filtered = filtered[filtered['title'].astype(str).str.contains(title, case=False, na=False)]_*
    
-![la recherche par Année](year_2003.png)
-![la recherche par Année et Venue](year 2002,VLDP.png)
+! [la recherche par Année](year_2003.png)
+! [la recherche par Année et Venue](year 2002,VLDP.png)
 
 
 ## 5) Sauvegarder les resultats filtré
  nous pouvons sauvegarder le resultats de filtrage dans un fichier.csv Grace à  l'instruction:
  **_filtered. to_csv('filtered_results.csv', index=False)_**
- ![Sauvegarde dans fichier CSV](save_csv.png)
+ ! [Sauvegarde dans fichier CSV](Save_CVS.png)
