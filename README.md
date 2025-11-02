@@ -5,12 +5,14 @@ les bibliothèque utilisées sont **Tkinter**, **Pandas**, **Matplotlib**
  ## les fonctions de l'Application
  les fonctions utilisées dans cette application sont:
  1. **load_csv()**: Pour charger et afficher le fichier.csv dans une DataFrame 
- 2. **show_data(dataframe)**: Pour afficher le DataFrame sur une composante Tree
- 3. **apply_filters()**: Appliquer les filtres sur les titres, l'Autheur, l'Année et la venue
- 4. **save_to_csv()**: Afin de sauvegarder les résultats filtrés dans un fichier.csv
+ 2. **show_data(dataframe)**: Pour afficher le DataFrame sur une composante Tree.
+ 3. **apply_filters()**: Appliquer les filtres sur les titres, l'Autheur, l'Année et la venue.
+ 4. **save_to_csv()**: Afin de sauvegarder les résultats filtrés dans un fichier.csv.
  5. **preprocessing()**: Le prétratement des données concernant les noms d'auteurs, ou de l'Avenue.
  6. **standardize_author(name)**: Standardisation des noms par la première lettre de prénom suivi de nom.
- 7. **standardize_venue(venue)**: Standarisation des venue par des abreviation commune
+ 7. **standardize_venue(venue)**: Standarisation des venue par des abreviation commune.
+ 8. **visualize_Number_Year()**: Pour dessiner **line chart** montrant le nombre de publication par année.
+ 9. **most_active_authors()**: Pour dessiner en Horizontal **bar chart:** montrant les 10 top auteurs actifs.
 
 
 ## L'Interface de l'Application 
@@ -27,8 +29,8 @@ Le fichier chrgé est affiché sur un composant Tree , le resultats sur l'image
 ## pré-traiement de données:
 Consiste a remplacer les nome de l'auteur par la premieère Lettre de Prénom et aprés suivi par le Nom de l'autheur, concernant les venue en impliménte un dictionnaire des abreviation come suit:
 
-venue    | formulair
----------| -------------
+la venue    | le formulair
+--------- | -------------
 'VLDB'  | VLD
 VLDB 2022| VLDB
 VLDB Conference| VLDB,
@@ -38,4 +40,4 @@ SIGMOD Conference|SIGMOD
 ACM Trans. Database Syst.|ACM Trans
 
 et apres en remplace les différentes variantes de venues de mêmes noms par un un seul formulaire suivant 
-le dictionnaire
+le dictionnaire comme illustré dans le tableau ci-dessus.
