@@ -49,7 +49,7 @@ Nous pouvons faire des recherche par nom , titre, année et venue , et pour cela
 *_filtered = df.copy()_*  
 *_filtered = filtered[filtered['title'].astype(str).str.contains(title, case=False, na=False)]_*
    
-![la recherche par Année](year_2003.png)   
+![la recherche par titre](partitle.png)   
 ### 5.1 ) Exemple de recherche par l'année 2003  
 ![la recherche par Année](year_2003.png)  
 
