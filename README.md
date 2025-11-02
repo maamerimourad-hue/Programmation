@@ -1,5 +1,5 @@
 ## Prerequis
-nous avons utilisé pour cette application langage Python sous Pycharme
+Nous avons utilisé pour cette application LE langage de programmation **Python 3.9** sous **Pycharme**
 les bibliothèque utilisées sont **Tkinter**, **Pandas**, **Matplotlib**
 
  ## 1) les fonctions de l'Application
@@ -18,11 +18,11 @@ les bibliothèque utilisées sont **Tkinter**, **Pandas**, **Matplotlib**
 ## 2) L'Interface de l'Application 
 ![L'Interface génerale de l'Application](Interface_Globale.png "L'Interface génerale de l'Application")
 
-## 3) Le chargement de fichier
+## 3) Le chargement de fichier  
 Nous utilison l'instruction **_df = pd.read_csv(file_path)_** pour charger le fichier a partir d'un chmenin 
 ![le chargement de fichier CSV](load_succes.png "le chargement de fichier CSV")
 
-## 3.1) Affichage de fichier
+## 3.1) Affichage de fichier  
 Le fichier chrgé est affiché sur un composant **Treeview** , le resultats sur l'image
 ![Affichage de fichier](tree_globale.png)
 
