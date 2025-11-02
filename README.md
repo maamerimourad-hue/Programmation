@@ -66,12 +66,13 @@ Nous pouvons faire des recherche par nom , titre, année et venue , et pour cela
  ![Sauvegarde dans fichier CSV](Save_CVS.png "Sauvegarde dans fichier CSV")
  
 ## 7) Analyse et  Visualisation 
-Nous montrons le reultats concerne le nombre de publication par année par un graphique linéair **line chart**  
+Nous montrons le reultats concerne le nombre de publication par année par un graphique linéair **(line chart)**  
 ```python
 pubs_per_year = df.groupby('year').size()
 plt.plot(pubs_per_year.index, pubs_per_year.values, marker='o')
 ```
 ![number par année](number_by_years.png)  
+
 
 et Nous montrons le reultats concerne les autheurs les plus actif (exemple top 10) par un graphique à barres  **(bar chart)**
 ```python
