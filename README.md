@@ -27,16 +27,13 @@ Le fichier chrgé est affiché sur un composant Tree , le resultats sur l'image
 ## pré-traiement de données:
 Consiste a remplacer les nome de l'auteur par la premieère Lettre de Prénom et aprés suivi par le Nom de l'autheur, concernant les venue en impliménte un dictionnaire des abreviation come suit:
 
--------------------
-|'VLDB'|:|'VLDB' |
+venue    | formulair
+--------- -------------
+'VLDB' :   'VLDB' 
+VLDB 2022  : 'VLDB'
 
--------------------------
-|VLDB 2022|: |VLDB|
 
----------------------
-|'VLDB J'|: |'VLDB'|
 
------------------------
 
 'VLDB Conference': 'VLDB',
 'ICML Conference': 'ICML',
