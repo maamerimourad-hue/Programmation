@@ -46,9 +46,10 @@ le dictionnaire comme illustré dans le tableau ci-dessus.
 
 ## 5) Appliquer des  filtres
 Nous pouvons faire des recherche par nom , titre, année et venue , et pour cela nous utilisant ces instructions (exemple sur titre):  
+```python
 *_filtered = df.copy()_*  
 *_filtered = filtered[filtered['title'].astype(str).str.contains(title, case=False, na=False)]_*
-   
+```
 ![la recherche par titre](partitle.png)   
 ### 5.1 ) Exemple de recherche par l'année 2003  
 ![la recherche par Année](year_2003.png)  
@@ -57,8 +58,26 @@ Nous pouvons faire des recherche par nom , titre, année et venue , et pour cela
 ![la recherche par Année et Venue](year%202002%20%2C%20VLDP.png)  
 
 
-## 5) Sauvegarder les resultats filtrés
+## 6) Sauvegarder les resultats filtrés
  Nous pouvons sauvegarder le resultats de filtrage dans un fichier.csv Grace à  l'instruction:    
+ ```python
   **_filtered. to_csv('filtered_results.csv', index=False)_**
-  
+  ```
  ![Sauvegarde dans fichier CSV](Save_CVS.png "Sauvegarde dans fichier CSV")
+ 
+## 7) Analyse et  Visualisation 
+Nous montrons le reultats concerne le nombre de publication par année par un graphique linéair **line chart**  
+```python
+pubs_per_year = df.groupby('year').size()
+plt.plot(pubs_per_year.index, pubs_per_year.values, marker='o')
+```
+![number par année](number_by_years.png)  
+
+et Nous montrons le reultats concerne les autheurs les plus actif (exemple top 10) par un graphique à barres  **(bar chart)**
+```python
+ authors = [a.strip() for sublist in df['authors'].str.split(',') for a in sublist]
+ counter = Counter(authors)
+ top_authors = counter.most_common(10)
+ plt.barh([a[0] for a in reversed(top_authors)], [a[1] for a in reversed(top_authors)])
+
+![number par année](topMost_active.png)  
