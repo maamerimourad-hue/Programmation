@@ -1,37 +1,42 @@
 ## Prerequis
-Nous avons utilisé pour cette application LE langage de programmation **Python 3.9** sous **Pycharme**
-les bibliothèque utilisées sont **Tkinter**, **Pandas**, **Matplotlib**
+Nous avons utilisé pour cette application le langage de programmation **Python 3.9** sous **Pycharme**
+les bibliothèques utilisées sont
+- **Tkinter**: pour l'interface graphique,
+- **Pandas** : sert à manipuler et analyser des données tabulaires.
+- **Matplotlib**: pour visualiser les données
+  En plus de l'import d'un fichier **functions.py** qui contient les fonctions de         prétraitement.  
 
  ## 1) les fonctions de l'Application
  les fonctions utilisées dans cette application sont:
- 1. **load_csv()**: Pour charger et afficher le fichier.csv dans une DataFrame 
- 2. **show_data(dataframe)**: Pour afficher le DataFrame sur une composante Tree.
- 3. **apply_filters()**: Appliquer les filtres sur les titres, l'Autheur, l'Année et la venue.
+ 1. **load_csv()**: Pour charger et afficher le fichier.csv dans une DataFrame. 
+ 2. **show_data(dataframe)**: Pour afficher le DataFrame dans une composante Treeview.
+ 3. **apply_filters()**: Appliquer les filtres sur les titres, l'Auteur, l'Année et la     venue.
  4. **save_to_csv()**: Afin de sauvegarder les résultats filtrés dans un fichier.csv.
- 5. **preprocessing()**: Le prétratement des données concernant les noms d'auteurs, ou de l'Avenue.
- 6. **standardize_author(name)**: Standardisation des noms par la première lettre de prénom suivi de nom.
- 7. **standardize_venue(venue)**: Standarisation des venue par des abreviation commune.
- 8. **visualize_Number_Year()**: Pour dessiner **line chart** montrant le nombre de publication par année.
- 9. **most_active_authors()**: Pour dessiner en Horizontal **bar chart** montrant les 10 top auteurs actifs.
+ 5. **preprocessing()**: Le prétraitement des données concernant les noms d'auteurs, ou     de l'Avenue.
+ 6. **standardize_author(name)**: Standardisation des noms par la première lettre de        prénom suivie du nom.   
+ 7. **standardize_venue(venue)**: Standardisation des venues par des abréviations           communes.
+ 8. **visualize_Number_Year()**: Pour dessiner **line chart** montrant le nombre de         publications par année.
+ 9. **most_active_authors()**: Pour dessiner en Horizontal **bar chart** montrant les        auteurs actifs (10 top).
 
 
 ## 2) L'Interface de l'Application 
+L'interface de l'application se compose de boutons , de champs d'entrée pour le filtrage et d'un Treeview pour l'affichage.
 ![L'Interface génerale de l'Application](Interface_Globale.png "L'Interface génerale de l'Application")
 
 ## 3) Le chargement de fichier  
-Nous utilison l'instruction **_df = pd.read_csv(file_path)_** pour charger le fichier a partir d'un chmenin 
+Nous utilison l'instruction **_df = pd.read_csv(file_path)_** pour charger le fichier a partir d'un chemin. 
 ![le chargement de fichier CSV](load_succes.png "le chargement de fichier CSV")
 
 ## 3.1) Affichage de fichier  
-Le fichier chrgé est affiché sur un composant **Treeview** , le resultats sur l'image
+Le fichier chargé est affiché sur un composant **Treeview** , le resultats sur l'image
 ![Affichage de fichier](Tree_Globale.png)
 
-## 4) Pré-traiement de données:
-Consiste a remplacer les nome de l'auteur par la premieère Lettre de Prénom et aprés suivi par le Nom de l'autheur, concernant les venue en impliménte un dictionnaire des abreviation come suit:
+## 4) Prétraiement de données:
+Consiste a remplacer les nome de l'auteur par la première lettre de Prénom et aprés suivi par le Nom de l'auteur, concernant les venue en impliménte un dictionnaire des abreviation come suit:
 
 la venue    | le formulair
 --------- | -------------
-'VLDB'  | VLD
+'VLDB'  | VLDB
 'VLDB 2022'| VLDB
 'VLDB Conference'| VLDB
 'ICML Conference' |ICML
@@ -39,13 +44,12 @@ la venue    | le formulair
 'SIGMOD Conference'|SIGMOD
 'ACM Trans. Database Syst.'|ACM Trans
 
-Et après en remplace les différentes variantes de mêmes noms par un seul formulaire suivant
-le dictionnaire comme illustré dans le tableau ci-dessus.
+Et après nous remplaçons les différentes variantes des mêmes noms par un seul formulaire en suivant le dictionnaire comme illustré dans le tableau ci-dessus.
 
 ![le Pré-traitement](preprocessing.png)
 
 ## 5) Appliquer des  filtres
-Nous pouvons faire des recherche par nom , titre, année et venue , et pour cela nous utilisant ces instructions (exemple sur titre):  
+Nous pouvons faire des recherches par nom , titre, année et venue , et pour cela nous utilisant ces instructions (exemple sur un titre):  
 ```python
 filtered = df.copy()
 filtered = filtered[filtered['title'].astype(str).str.contains(title, case=False, na=False)]
@@ -54,7 +58,7 @@ filtered = filtered[filtered['title'].astype(str).str.contains(title, case=False
 ### 5.1 ) Exemple de recherche par l'année 2003  
 ![la recherche par Année](year_2003.png)  
 
-### 5.2 ) Exemple de recherch par (l'année 2002 et venue=VLDP)  aprés un prétraitement
+### 5.2 ) Exemple de recherch par (l'année 2002 et venue=VLDB)  aprés un prétraitement
 ![la recherche par Année et Venue](year%202002%20%2C%20VLDP.png)  
 
 
