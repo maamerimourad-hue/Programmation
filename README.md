@@ -24,7 +24,7 @@ L'interface de l'application se compose de boutons , de champs d'entrée pour le
 ![L'Interface génerale de l'Application](Interface_Globale.png "L'Interface génerale de l'Application")
 
 ## 3) Le chargement de fichier  
-Nous utilison l'instruction **_df = pd.read_csv(file_path)_** pour charger le fichier a partir d'un chemin. 
+Nous utilisons l'instruction **_df = pd.read_csv(file_path)_** pour charger le fichier à partir d'un chemin.  
 ![le chargement de fichier CSV](load_succes.png "le chargement de fichier CSV")
 
 ## 3.1) Affichage de fichier  
