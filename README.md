@@ -24,7 +24,9 @@ L'interface de l'application se compose de **boutons**:
 * Bouton "**Charger un fichier CSV**": pour charger le dataSet, appel load_csv().
 * Bouton "**Appliquer les filtres**": pour la recherche, appel apply_filters().  
 * Bouton "**Preprocessing**":pour le prétraitement des données.  
-* Bouton "**Sauvegarder Résultats en CSV**":pour sauvegarder le filtrage dans un fichier.csv  
+* Bouton "**Sauvegarder Résultats en CSV**":pour sauvegarder le filtrage dans un fichier.csv.
+* Bouton "**Number_by_Year**" :visualiser un graphique linéaire de publications par année.
+* Bouton "**most_authors**": visualiser un graphique à barres d'auteurs les plus actifs.
 
 Et des **champs d'entrée** pour le filtrage et un **Treeview** pour l'affichage. 
 
