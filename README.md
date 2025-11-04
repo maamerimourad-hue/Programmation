@@ -25,15 +25,19 @@ L'interface de l'application se compose de **boutons**:
 * Bouton "**Appliquer les filtres**": pour la recherche, appel apply_filters().  
 * Bouton "**Preprocessing**":pour le prétraitement des données.  
 * Bouton "**Sauvegarder Résultats en CSV**":pour sauvegarder le filtrage dans un fichier.csv  
-Et des **champs d'entrée** pour le filtrage et un **Treeview** pour l'affichage.  
+
+Et des **champs d'entrée** pour le filtrage et un **Treeview** pour l'affichage. 
+
 ![L'Interface génerale de l'Application](Interface_Globale.png "LInterface génerale de lApplication")
 
 ## 3) Le chargement de fichier  
 Nous utilisons l'instruction **_df = pd.read_csv(file_path)_** pour charger le fichier à partir d'un chemin.  
+
 ![le chargement de fichier CSV](load_succes.png "le chargement de fichier CSV")
 
 ## 3.1) Affichage de fichier  
 Le fichier chargé est affiché sur un composant **Treeview** , le resultats sur l'image
+
 ![Affichage de fichier](Tree_Globale.png "Affichage de fichier")
 
 ## 4) Prétraiement de données:
@@ -92,6 +96,6 @@ et Nous montrons le reultats concerne les autheurs les plus actif (exemple top 1
 ![number par année](topMost_active.png)  
 
 ## 8) Conclusion
-Cette application sert à charger et afficher le DataSet concernant des publications scientifiques, elle permet de faire la recherche par auteur , année et titre . Nous pouvons sauvegarder le resultas de recherche sur un fichier.csv et visualiser 
+Cette application sert à charger et afficher un DataSet (par exemple les publications scientifiques), elle permet de faire la recherche par auteur , année et titre . Nous pouvons sauvegarder le résultat de recherche dans un fichier.csv et visualiser en graphique le nombre de publications par année et aussi un graphique à barres concernant les auteurs les plus actifs.
 
 
