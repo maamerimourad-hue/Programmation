@@ -1,16 +1,16 @@
 ## Prerequis
-Nous avons utilisé pour cette application le langage de programmation **Python 3.9** sous **Pycharme**  
-les bibliothèques utilisées sont
+Nous avons utilisé pour cette application le langage de programmation **Python 3.9** sous **Pycharme** . 
+les bibliothèques utilisées sont:  
 - **Tkinter**: pour l'interface graphique,
 - **Pandas** : sert à manipuler et analyser des données tabulaires.
-- **Matplotlib**: pour visualiser les données
-  En plus de l'import d'un fichier **functions.py** qui contient les fonctions de         prétraitement.  
+- **Matplotlib**: pour visualiser les données.
+  En plus de l'import d'un fichier **functions.py** contenant les fonctions de         prétraitement.  
 
  ## 1) les fonctions de l'Application
  les fonctions utilisées dans cette application sont:
  1. **load_csv()**: Pour charger et afficher le fichier.csv dans une DataFrame. 
  2. **show_data(dataframe)**: Pour afficher le DataFrame dans une composante Treeview.
- 3. **apply_filters()**: Appliquer les filtres sur les titres, l'Auteur, l'Année et la     venue.
+ 3. **apply_filters()**: Appliquer les filtres aux titres, à l'Auteur, à l'Année et à      la venue.
  4. **save_to_csv()**: Afin de sauvegarder les résultats filtrés dans un fichier.csv.
  5. **preprocessing()**: Le prétraitement des données concernant les noms d'auteurs, ou     de l'Avenue.
  6. **standardize_author(name)**: Standardisation des noms par la première lettre de        prénom suivie du nom.   
@@ -20,7 +20,12 @@ les bibliothèques utilisées sont
 
 
 ## 2) L'Interface de l'Application 
-L'interface de l'application se compose de boutons , de champs d'entrée pour le filtrage et d'un Treeview pour l'affichage.
+L'interface de l'application se compose de boutons:
+- Bouton "Charger un fichier CSV": pour charger le dataSet, appel load_csv().  
+- Bouton "Appliquer les filtres": pour la recherche, appel apply_filters().  
+- Bouton "Preprocessing":pour le prétraitement des données.  
+- Bouton "Sauvegarder Résultats en CSV":pour sauvegarder le filtrage dans un fichier.csv  
+et des champs d'entrée pour le filtrage et un Treeview pour l'affichage.  
 ![L'Interface génerale de l'Application](Interface_Globale.png "L'Interface génerale de l'Application")
 
 ## 3) Le chargement de fichier  
