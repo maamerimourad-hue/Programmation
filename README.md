@@ -88,8 +88,10 @@ et Nous montrons le reultats concerne les autheurs les plus actif (exemple top 1
  counter = Counter(authors)
  top_authors = counter.most_common(10)
  plt.barh([a[0] for a in reversed(top_authors)], [a[1] for a in reversed(top_authors)])
+```
+![number par année](topMost_active.png)  
 
 ## 8) Conclusion
 Cette application sert à charger et afficher le DataSet concernant des publications scientifiques, elle permet de faire la recherche par auteur , année et titre . Nous pouvons sauvegarder le resultas de recherche sur un fichier.csv et visualiser 
-```
-![number par année](topMost_active.png)  
+
+
