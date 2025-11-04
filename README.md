@@ -26,7 +26,7 @@ L'interface de l'application se compose de boutons:
 * Bouton "**Preprocessing**":pour le prétraitement des données.  
 * Bouton "**Sauvegarder Résultats en CSV**":pour sauvegarder le filtrage dans un fichier.csv  
 Et des champs d'entrée pour le filtrage et un Treeview pour l'affichage.  
-![L'Interface génerale de l'Application](Interface_Globale.png *LInterface génerale de lApplication*)
+![L'Interface génerale de l'Application](Interface_Globale.png "LInterface génerale de lApplication")
 
 ## 3) Le chargement de fichier  
 Nous utilisons l'instruction **_df = pd.read_csv(file_path)_** pour charger le fichier à partir d'un chemin.  
@@ -34,7 +34,7 @@ Nous utilisons l'instruction **_df = pd.read_csv(file_path)_** pour charger le f
 
 ## 3.1) Affichage de fichier  
 Le fichier chargé est affiché sur un composant **Treeview** , le resultats sur l'image
-![Affichage de fichier](Tree_Globale.png)
+![Affichage de fichier](Tree_Globale.png "Affichage de fichier")
 
 ## 4) Prétraiement de données:
 Consiste a remplacer les nome de l'auteur par la première lettre de Prénom et aprés suivi par le Nom de l'auteur, concernant les venue en impliménte un dictionnaire des abreviation come suit:
