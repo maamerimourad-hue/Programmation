@@ -4,28 +4,28 @@ les bibliothèques utilisées sont:
 - **Tkinter**: pour l'interface graphique,
 - **Pandas** : sert à manipuler et analyser des données tabulaires.
 - **Matplotlib**: pour visualiser les données.
-  En plus de l'import d'un fichier **functions.py** contenant les fonctions de         prétraitement.  
+  En plus de l'import d'un fichier **functions.py** contenant les fonctions de prétraitement.  
 
  ## 1) les fonctions de l'Application
  les fonctions utilisées dans cette application sont:
  1. **load_csv()**: Pour charger et afficher le fichier.csv dans une DataFrame. 
  2. **show_data(dataframe)**: Pour afficher le DataFrame dans une composante Treeview.
- 3. **apply_filters()**: Appliquer les filtres aux titres, à l'Auteur, à l'Année et à      la venue.
+ 3. **apply_filters()**: Appliquer les filtres aux titres, à l'Auteur, à l'Année et à la venue.
  4. **save_to_csv()**: Afin de sauvegarder les résultats filtrés dans un fichier.csv.
- 5. **preprocessing()**: Le prétraitement des données concernant les noms d'auteurs, ou     de l'Avenue.
- 6. **standardize_author(name)**: Standardisation des noms par la première lettre de        prénom suivie du nom.   
- 7. **standardize_venue(venue)**: Standardisation des venues par des abréviations           communes.
- 8. **visualize_Number_Year()**: Pour dessiner **line chart** montrant le nombre de         publications par année.
- 9. **most_active_authors()**: Pour dessiner en Horizontal **bar chart** montrant les        auteurs actifs (10 top).
+ 5. **preprocessing()**: Le prétraitement des données concernant les noms d'auteurs, ou de l'Avenue.
+ 6. **standardize_author(name)**: Standardisation des noms par la première lettre de prénom suivie du nom.   
+ 7. **standardize_venue(venue)**: Standardisation des venues par des abréviations communes.
+ 8. **visualize_Number_Year()**: Pour dessiner **line chart** montrant le nombre de publications par année.
+ 9. **most_active_authors()**: Pour dessiner en Horizontal **bar chart** montrant les auteurs actifs (10 top).
 
 
 ## 2) L'Interface de l'Application 
-L'interface de l'application se compose de boutons:
+L'interface de l'application se compose de **boutons**:
 * Bouton "**Charger un fichier CSV**": pour charger le dataSet, appel load_csv().
 * Bouton "**Appliquer les filtres**": pour la recherche, appel apply_filters().  
 * Bouton "**Preprocessing**":pour le prétraitement des données.  
 * Bouton "**Sauvegarder Résultats en CSV**":pour sauvegarder le filtrage dans un fichier.csv  
-Et des champs d'entrée pour le filtrage et un Treeview pour l'affichage.  
+Et des **champs d'entrée** pour le filtrage et un **Treeview** pour l'affichage.  
 ![L'Interface génerale de l'Application](Interface_Globale.png "LInterface génerale de lApplication")
 
 ## 3) Le chargement de fichier  
@@ -54,7 +54,7 @@ Et après nous remplaçons les différentes variantes des mêmes noms par un seu
 ![le Pré-traitement](preprocessing.png)
 
 ## 5) Appliquer des  filtres
-Nous pouvons faire des recherches par nom , titre, année et venue , et pour cela nous utilisant ces instructions (exemple sur un titre):  
+Nous pouvons faire des recherches par nom , titre, année et venue , et pour cela nous utilisons les instructions suivantes (exemple sur un titre):  
 ```python
 filtered = df.copy()
 filtered = filtered[filtered['title'].astype(str).str.contains(title, case=False, na=False)]
@@ -75,13 +75,12 @@ filtered = filtered[filtered['title'].astype(str).str.contains(title, case=False
  ![Sauvegarde dans fichier CSV](Save_CVS.png "Sauvegarde dans fichier CSV")
  
 ## 7) Analyse et  Visualisation 
-Nous montrons le reultats concerne le nombre de publication par année par un graphique linéair **(line chart)**  
+Nous montrons le reultats concerne le nombre de publication par année avec un graphique linéair **(line chart)**  
 ```python
 pubs_per_year = df.groupby('year').size()
 plt.plot(pubs_per_year.index, pubs_per_year.values, marker='o')
 ```
 ![number par année](number_by_years.png)  
-
 
 et Nous montrons le reultats concerne les autheurs les plus actif (exemple top 10) par un graphique à barres  **(bar chart)**
 ```python
@@ -89,5 +88,8 @@ et Nous montrons le reultats concerne les autheurs les plus actif (exemple top 1
  counter = Counter(authors)
  top_authors = counter.most_common(10)
  plt.barh([a[0] for a in reversed(top_authors)], [a[1] for a in reversed(top_authors)])
+
+## 8) Conclusion
+Cette application sert à charger et afficher le DataSet concernant des publications scientifiques, elle permet de faire la recherche par auteur , année et titre . Nous pouvons sauvegarder le resultas de recherche sur un fichier.csv et visualiser 
 ```
 ![number par année](topMost_active.png)  
