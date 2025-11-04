@@ -1,4 +1,4 @@
-## Prerequis
+## Prérequis
 Nous avons utilisé pour cette application le langage de programmation **Python 3.9** sous **Pycharm** . 
 les bibliothèques utilisées sont:  
 - **Tkinter**: pour l'interface graphique,
