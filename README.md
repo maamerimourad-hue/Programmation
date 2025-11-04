@@ -98,6 +98,6 @@ et Nous montrons le reultats concerne les auteurs les plus actifs (exemple top 1
 ![number par année](topMost_active.png)  
 
 ## 8) Conclusion
-Cette application implémentée en langage Python sert à charger et afficher un DataSet (par exemple les publications scientifiques), elle permet de faire la recherche par auteur , année et titre . Nous pouvons sauvegarder le résultat de recherche dans un fichier.csv et visualiser en graphique le nombre de publications par année et aussi un graphique à barres concernant les auteurs les plus actifs.
+Cette application implémentée en langage Python sert à charger et afficher un DataSet (par exemple les publications scientifiques), elle permet de faire la recherche par auteur , année et titre . Nous pouvons sauvegarder le résultat de recherche dans un fichier.csv et visualiser un graphique du nombre de publications par année et aussi un graphique à barres concernant les auteurs les plus actifs.
 
 
