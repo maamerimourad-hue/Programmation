@@ -21,11 +21,11 @@ les bibliothèques utilisées sont:
 
 ## 2) L'Interface de l'Application 
 L'interface de l'application se compose de boutons:
-- Bouton "Charger un fichier CSV": pour charger le dataSet, appel load_csv().  
-- Bouton "Appliquer les filtres": pour la recherche, appel apply_filters().  
-- Bouton "Preprocessing":pour le prétraitement des données.  
-- Bouton "Sauvegarder Résultats en CSV":pour sauvegarder le filtrage dans un fichier.csv  
-et des champs d'entrée pour le filtrage et un Treeview pour l'affichage.  
+Bouton "**Charger un fichier CSV**": pour charger le dataSet, appel load_csv().  
+Bouton "**Appliquer les filtres**": pour la recherche, appel apply_filters().  
+Bouton "**Preprocessing**":pour le prétraitement des données.  
+Bouton "**Sauvegarder Résultats en CSV**":pour sauvegarder le filtrage dans un fichier.csv
+Et des champs d'entrée pour le filtrage et un Treeview pour l'affichage.  
 ![L'Interface génerale de l'Application](Interface_Globale.png "L'Interface génerale de l'Application")
 
 ## 3) Le chargement de fichier  
