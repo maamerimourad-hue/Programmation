@@ -86,7 +86,7 @@ plt.plot(pubs_per_year.index, pubs_per_year.values, marker='o')
 ```
 ![number par année](number_by_years.png)  
 
-et Nous montrons le reultats concerne les autheurs les plus actif (exemple top 10) par un graphique à barres  **(bar chart)**
+et Nous montrons le reultats concerne les auteurs les plus actifs (exemple top 10) par un graphique à barres  **(bar chart)**
 ```python
  authors = [a.strip() for sublist in df['authors'].str.split(',') for a in sublist]
  counter = Counter(authors)
@@ -96,6 +96,6 @@ et Nous montrons le reultats concerne les autheurs les plus actif (exemple top 1
 ![number par année](topMost_active.png)  
 
 ## 8) Conclusion
-Cette application sert à charger et afficher un DataSet (par exemple les publications scientifiques), elle permet de faire la recherche par auteur , année et titre . Nous pouvons sauvegarder le résultat de recherche dans un fichier.csv et visualiser en graphique le nombre de publications par année et aussi un graphique à barres concernant les auteurs les plus actifs.
+Cette application implémentée en langage Python sert à charger et afficher un DataSet (par exemple les publications scientifiques), elle permet de faire la recherche par auteur , année et titre . Nous pouvons sauvegarder le résultat de recherche dans un fichier.csv et visualiser en graphique le nombre de publications par année et aussi un graphique à barres concernant les auteurs les plus actifs.
 
 
