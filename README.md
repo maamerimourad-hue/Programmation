@@ -1,5 +1,5 @@
 ## Prerequis
-Nous avons utilisé pour cette application le langage de programmation **Python 3.9** sous **Pycharme** . 
+Nous avons utilisé pour cette application le langage de programmation **Python 3.9** sous **Pycharm** . 
 les bibliothèques utilisées sont:  
 - **Tkinter**: pour l'interface graphique,
 - **Pandas** : sert à manipuler et analyser des données tabulaires.
